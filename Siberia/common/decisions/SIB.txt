@@ -1,0 +1,30 @@
+political_actions = {
+
+	SIB_move_capital = {
+
+		allowed = {
+			original_tag = SIB
+		}
+
+		available = {
+			owns_state = 570
+			has_full_control_of_state = 570
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_full_control_of_state = 570
+		}
+		
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.3			
+			hidden_effect = { 
+				570 = { set_state_name = "Great Siberia" }
+			}
+		}
+	}
+}

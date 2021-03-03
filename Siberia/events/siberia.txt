@@ -1,0 +1,37 @@
+add_namespace = sib
+
+
+country_event = {
+	id = sib.1
+	title = sib.1.t
+	desc = sib.1.d
+	picture = GFX_news_event_generic_rally2.dds
+	
+	fire_only_once = yes
+	
+	trigger = {
+	tag = SIB
+	date > 1936.2.10 
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		}
+		
+	option = {
+		name = sib.1.a
+		add_war_support = 0.05
+		ai_chance = { factor = 80 } 
+		trigger = {
+		
+		}
+	}
+
+		option = {
+			name = sib.1.b
+			ai_chance = { factor = 20 }
+			trigger = {
+			}
+			
+		}
+}		
